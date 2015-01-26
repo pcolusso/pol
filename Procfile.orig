@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+web: bundle exec puma -t 5:5 -e ${RACK_ENV:-development}
+=======
+web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
+>>>>>>> 87494402084ec903b69a2597ebc63cbd0f3bf8d7
