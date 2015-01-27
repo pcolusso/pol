@@ -46,6 +46,7 @@ Backtrace:
 /Users/paulcolusso/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
 /Users/paulcolusso/Downloads/CodeKit.app/Contents/Resources/engines/scss/bin/sass:13:in `<main>'
 */
+
 body:before {
   white-space: pre;
   font-family: monospace;
