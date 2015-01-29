@@ -20,7 +20,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><%= link_to 'Home', controller:  'welcome'%></li>
+            <%= nav_link_to link: 'Home', target_controller: 'welcome' %>
+            <%= nav_link_to link: 'Journal', target_controller: 'journal' %>
+            <%= nav_link_to link: 'Gallery', target_controller: 'gallery' %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
