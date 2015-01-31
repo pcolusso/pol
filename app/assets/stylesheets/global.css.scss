@@ -1,4 +1,8 @@
 
+/*vars*/
+
+$state-danger-text:#ff0000;
+
 /* mixins */
 
 @mixin box_sizing {
@@ -30,6 +34,11 @@ footer {
   }
 }
 
+.space_vert {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -41,6 +50,21 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error !optional;
+  .form-control {
+    color: $state-danger-text;
+  }
 }
 
 /* misc */

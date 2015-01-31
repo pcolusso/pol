@@ -8,4 +8,14 @@ module ApplicationHelper
 			return content_tag(:li, link)
 		end
 	end
+
+	def show_messages
+		#TODO: Seems rather smelly to simply raw this output, find a better way?
+		tags = ""
+		flash.each do |message_type, message|
+			message_class = "alert alert-" + message_type
+			tags+= content_tag(:div, message, class: message_class)
+		end
+		return tags
+	end
 end
