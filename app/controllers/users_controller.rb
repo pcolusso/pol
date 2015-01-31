@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     @user.level = 0 #all new users start out at level 0
     if @user.save
+      log_in @user
       flash[:success] = "You're signed up!"
       redirect_to @user
     else

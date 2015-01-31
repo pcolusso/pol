@@ -1,0 +1,4 @@
+greg: 
+    name: Greg Gregerson
+    email: gregg@gregco.greg
+    password_digest: <%= User.digest('password') %>
