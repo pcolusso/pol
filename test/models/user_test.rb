@@ -48,4 +48,8 @@ class UserTest < ActiveSupport::TestCase
     @user.save
     assert_equal email_uppercase.downcase, @user.reload.email
   end
+
+  test "authenticated? with nil digest" do
+  	assert_not @user.authenticated?('')
+  end
 end
